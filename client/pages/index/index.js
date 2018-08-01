@@ -8,7 +8,7 @@ Page({
         userInfo: {},
         logged: false,
         takeSession: false,
-        requestResult: ''
+        requestResult: {}
     },
 
     // 用户登录示例
@@ -68,12 +68,18 @@ Page({
         var that = this
         var options = {
             url: config.service.requestUrl,
+            data: {
+              mid: '1',
+              max: '5'
+            },
             login: true,
             success (result) {
                 util.showSuccess('请求成功完成')
                 console.log('request success', result)
                 that.setData({
-                    requestResult: JSON.stringify(result.data)
+                   // requestResult: JSON.stringify(result.data)
+                  
+                  requestResult: result.data
                 })
             },
             fail (error) {

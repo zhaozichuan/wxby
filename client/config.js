@@ -3,7 +3,8 @@
  */
 
 // 此处主机域名修改成腾讯云解决方案分配的域名
-var host = 'https://8v0t20rx.qcloud.la';
+//var host = 'https://8v0t20rx.qcloud.la';
+var host = 'http://zhaozichuan.top';
 
 var config = {
 
@@ -15,7 +16,7 @@ var config = {
         loginUrl: `${host}/weapp/login`,
 
         // 测试的请求地址，用于测试会话
-        requestUrl: `${host}/weapp/user`,
+        requestUrl: `${host}/disList`,
 
         // 测试的信道服务地址
         tunnelUrl: `${host}/weapp/tunnel`,

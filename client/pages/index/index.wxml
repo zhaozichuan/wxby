@@ -22,6 +22,9 @@
         <view class="tunnel-text" wx:if="{{requestResult}}">
             <text class="request-text">{{'请求结果：' + requestResult}}</text>
         </view>
+        <view wx:for="{{requestResult.business.business}}" >
+              {{item.title}}:{{item.content}}
+        </view>
     </view>
 
     <!-- 上传图片测试 -->
