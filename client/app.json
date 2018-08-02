@@ -1,13 +1,38 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/index/telbook", 
+    "pages/index/comment",
     "pages/addCgi/addCgi"
   ],
   "window":{
     "backgroundColor":"#F6F6F6",
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "Wafer Quick Start",
+    "navigationBarTitleText": "xiaoqu",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index.png"
+      },
+      {
+        "pagePath": "pages/index/telbook",
+        "text": "通讯录",
+        "iconPath": "images/telbook.png",
+        "selectedIconPath": "images/telbook.png"
+      },
+      {
+        "pagePath": "pages/index/comment",
+        "text": "发帖",
+        "iconPath": "images/comment.png",
+        "selectedIconPath": "images/comment.png"
+      }
+    ]
   }
 }
