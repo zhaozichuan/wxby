@@ -1,8 +1,9 @@
 {
   "pages":[
+    "pages/index/login",
     "pages/index/index",
     "pages/index/telbook", 
-    "pages/index/comment",
+    "pages/index/comment",  
     "pages/addCgi/addCgi"
   ],
   "window":{
