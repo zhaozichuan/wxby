@@ -1,2 +1,18 @@
 <!--pages/index/comment.wxml-->
 <text>pages/index/comment.wxml</text>
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+   <input name="mid" hidden='{{true}}' value="1"/>
+   <input name="userId" hidden='{{true}}' value="1"/>
+   <view class="section">
+    <view class="section__title">主题</view>
+    <input name="title" placeholder="" />
+     <view class="textarea__title">内容</view>
+    <textarea name="content" placeholder="" />
+  </view>
+  <view class="btn-area">
+    <button formType="submit">Submit</button>
+    <button formType="reset">Reset</button>
+  </view>
+</form>
+

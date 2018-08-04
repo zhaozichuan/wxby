@@ -15,9 +15,11 @@ var config = {
         // 登录地址，用于建立会话
         loginUrl: `${host}/weapp/login`,
 
-        // 测试的请求地址，用于测试会话
+        // 测试的请求地址，用于展示主题列表
         requestUrl: `${host}/disList`,
 
+        // 测试的请求地址，用于发贴
+         addDis: `${host}/addDis`,
         // 测试的信道服务地址
         tunnelUrl: `${host}/weapp/tunnel`,
 
