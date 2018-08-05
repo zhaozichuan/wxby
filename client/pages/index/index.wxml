@@ -1,31 +1,18 @@
 <!--index.wxml-->
 <view class="container">
-    <!-- 用户登录测试 -->
-    <view class="userinfo" bindtap="login">
-        <image
-            class="userinfo-avatar"
-            src="{{logged ? userInfo.avatarUrl : './user-unlogin.png'}}"
-            background-size="cover"
-        ></image> 
-        <view>
-            <text class="userinfo-nickname">{{logged ? userInfo.nickName : '点击测试登录接口'}}</text>
-            <text class="userinfo-nickname" wx:if="{{logged}}">{{userInfo.lastLoginTime}}</text>
-        </view>
-    </view>
 
     <!-- 信道连接测试 -->
     <view class="tunnel">
         <view class="tunnel-text uploader-text">
-            <text bindtap="doRequest">请求（是否带有登陆态）</text>
-            <switch class="tunnel-switch" bindchange="switchRequestMode" color="#007AFF"/>
-        </view>
-        <view class="tunnel-text" wx:if="{{requestResult}}">
-            <text class="request-text">{{'请求结果：' + requestResult}}</text>
+           <image
+            class="userinfo-avatar"
+            src="{{logged ? userInfo.avatarUrl : './user-unlogin.png'}}"
+            background-size="cover"
+        ></image>
+            <text bindtap="doRequest">  请求（是否带有登陆态）</text>
+            
         </view>
         
-        <view wx:for="{{requestResult.business.business}}" >
-              {{item.title}}:{{item.content}}
-        </view>
     </view>
 
 
@@ -39,13 +26,20 @@
         <!--  <text>  {{item.title}}</text>
           <text>  {{item.content}} </text>-->  
         <view class="userinfo-avatar">
-          <open-data type="userAvatarUrl"></open-data>
-           
+          <open-data type="userAvatarUrl"></open-data>  
         </view>
+
           <list>  {{item.content}} </list>
           <open-data type="userCity" lang="zh_CN"></open-data>
     </view>
+     <view class="home-view3"> 
+        <view  class="home-view4" >
+            <image  class="home-image-heart" src="http://qty83k.creatby.com/materials/origin/c5656ef00d38d89eae437c5a9102f8fa_origin.png"></image>
 
+            <text class="home-text-heart bgColor" > 22</text>
+        </view>
+        <text class="home-text-time" >2016.10.29</text>
+    </view>
 </template>
 
  <view wx:for="{{requestResult.business.business}}" >
